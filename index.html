@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity image carousel using Vanilla JavaScript</title>
+
+    <!-- custom style css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font link  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- full-width images with number and caption text -->
+
+  <div class="carousel-container">
+
+    <div class="slides animate">
+      <img src="img/1.jpg" alt="slide">
+      <div class="number">1 / 5</div>
+      <div class="text">Slide 1</div>
+    </div>
+
+    <div class="slides animate">
+      <img src="img/2.jpg" alt="slide">
+      <div class="number">2 / 5</div>
+      <div class="text">Slide 2</div>
+    </div>
+
+    <div class="slides animate">
+      <img src="img/3.jpg" alt="slide">
+      <div class="number">3 / 5</div>
+      <div class="text">Slide 3</div>
+    </div>
+
+    <div class="slides animate">
+      <img src="img/4.jpg" alt="slide">
+      <div class="number">4 / 5</div>
+      <div class="text">Slide 4</div>
+    </div>
+
+    <div class="slides animate">
+      <img src="img/5.jpg" alt="slide">
+      <div class="number">5 / 5</div>
+      <div class="text">Slide 5</div>
+    </div>
+
+    <!-- next and previous buttons -->
+    <a href="#" class="prev" onclick="prevSlide()">&#10094;</a>
+    <a href="#" class="next" onclick="nextSlide()">&#10095;</a>
+
+    <!-- the dots/circles -->
+
+    <div class="dots-container">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+      <span class="dots" onclick="currentSlide(3)"></span>
+      <span class="dots" onclick="currentSlide(4)"></span>
+      <span class="dots" onclick="currentSlide(5)"></span>
+    </div>
+
+  </div>
+
+<!-- JS script file -->
+<script src="script.js" defer></script>
+    
+</body>
+</html>
